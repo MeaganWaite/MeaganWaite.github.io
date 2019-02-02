@@ -1,0 +1,71 @@
+body{
+    background-color: #ffffff;
+    font-size: 14px;
+    line-height: 32px;
+    font-family: work sans, sans-serif;
+}
+    
+h1{
+    font-family: roboto, Arial, Helvetica, sans-serif; 
+    font-size: 26px;
+}
+
+p{
+    font-size: 14px;
+}
+
+header{ 
+    margin: 10px auto;
+    background-color: #006c91;
+    border: 1px solid #002491;
+    text-align: center;
+    color: #ffffff;
+    max-width: 400px;
+    font-family: roboto, Arial, Helvetica, sans-serif; 
+}    
+
+nav{ 
+    margin: 10px auto;
+    background-color: #006c91;
+    border: 1px solid #002491;
+    text-align: center;
+    color: #ffffff;
+    max-width: 400px;
+    font-family: roboto, Arial, Helvetica, sans-serif; 
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a{
+    display: block;
+    padding: 5px;
+    color: #ffffff;
+    text-decoration: none;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+}
+
+.chosen{
+    background-color: #00916e;
+}
+
+.motto{
+    font-size: 14px;
+}
+
+header img{
+    width: 50px;
+    height: auto;
+}
+
+header img, .headings{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px; 
+    font-family: roboto, Arial, Helvetica, sans-serif;    
+}
+
