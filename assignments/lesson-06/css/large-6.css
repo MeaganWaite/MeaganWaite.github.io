@@ -1,0 +1,39 @@
+@media only screen and (min-width: 480px){ 
+    .largenav { 
+        display: inline-block !important;
+    }
+
+    .smallnav { 
+        display: none !important;
+    }
+
+    .forecast { 
+        display: inline-block !important;
+    }
+   
+    li {
+        float: left;
+    }
+
+    li a {
+        display: inline;
+        padding: 8px; 
+    }
+
+    li a:hover {
+        background-color: #e9eb80;    
+    }
+
+    nav ul {
+        overflow: auto;
+    }
+}
+
+header { 
+    width: 100%;
+}
+
+ul {
+    display: inline-block;
+}
+ 
