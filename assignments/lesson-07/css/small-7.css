@@ -1,0 +1,208 @@
+body{
+    background-color: #e9eb80;    
+    font-size: 14px;
+    line-height: 32px;
+    font-family: work sans, sans-serif;
+}
+    
+h1{
+    font-family: roboto, Arial, Helvetica, sans-serif; 
+    text-align: center;
+    font-size: 36px;
+    color: #fff;
+}
+
+h3 {
+    font-family: roboto, Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 24px;
+}
+
+p{
+    font-size: 14px;
+}
+
+header { 
+    flex: auto;
+    background-color: #006c91;
+    border: 1px solid #002491;
+    text-align: center;
+    font-family: roboto, Arial, Helvetica, sans-serif;    
+} 
+
+#instantweather { 
+  color: #fff;
+}
+
+article {
+    margin: 10px auto;
+    border: 1px solid #002491; 
+}
+
+.hero-picture { 
+    width: 100%;
+    margin:0 auto;
+    text-align: center;
+    height: 300px;
+} 
+
+nav {
+    flex: auto; 
+    background-color: #006c91;
+    border: 1px solid #002491;
+    text-align: center;
+    color: #ffffff;
+    font-family: roboto, Arial, Helvetica, sans-serif; 
+}
+
+.menu {
+    transition: 0.1s -webkit-transform linear;
+    transition: 0.1s transform linear;
+    transition: 0.1s transform linear, 0.1s -webkit-transform linear;
+    position: relative;
+    background: 0;
+    float: left;
+    margin-left: 2rem;
+    height: 1.7rem;
+    width: 2.5rem;
+    z-index: 1;
+    outline: 0;
+    padding: 0;
+    border: 0;
+  }
+  
+  .bar, .bar::before, .bar::after {
+    transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s -webkit-transform linear;
+    transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s transform linear;
+    transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s transform linear, 0.2s -webkit-transform linear;
+    position: absolute;
+    background: #fff;
+    margin: auto;
+    width: 100%;
+    height: 0.2rem;
+    content: '';
+    top: 50%;
+    left: 0;
+  }
+  .bar {
+    margin-top: -0.3rem;
+  }
+  .bar::before {
+    top: -0.7rem;
+  }
+  .bar::after {
+    top: 0.7rem;
+  }
+  .bar::before, .bar::after {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  .active .bar {
+    background: 0;
+  }
+  .active .bar::before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .active .bar::after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  .active .bar::before, .active .bar::after {
+    top: 0;
+  }
+  .active .bar, .active .bar::before, .active .bar::after {
+    transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s -webkit-transform linear 0.2s;
+    transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s;
+    transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s, 0.2s -webkit-transform linear 0.2s;
+  }
+  
+
+.largenav {
+    display: none;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav a { 
+    display: block;
+    padding: 5px;
+    color: #ffffff;
+    text-decoration: none;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+  
+}
+
+.chosen{
+    background-color: #00916e;
+}
+
+.motto{
+    font-size: 14px;
+}
+
+header img{
+    width: 50px;
+    height: auto;
+}
+
+header img, .headings{
+    display: flex;
+    justify-content: center;
+        margin: 10px; 
+    font-family: roboto, Arial, Helvetica, sans-serif;    
+}
+
+#logo { 
+  display: flex;
+  justify-content: left;
+}
+ 
+.containermain {
+    width: 80%;
+    margin-left: 10%;
+    display: inline-block;
+}
+
+h2 {
+    text-align: center;
+    font-size:2rem;
+    text-shadow:3px 3px 5px #777;
+}
+
+.herodiv {
+    position: relative;
+    width: 100%;
+}
+
+.summary {
+	position: absolute;
+	top: 25px;
+	left: 50px;
+    /* background: radial-gradient (#eee, #4567aa;); */
+    background-color: white;
+    opacity: .5;
+	border: 1px solid #000;
+	padding: 1.5rem;
+	box-shadow: 0 0 30px #fff;
+}
+
+.forecast {
+    display: none;
+}
+
+#currentdate { 
+  display: flex;
+}
+
+
+.wrapper { 
+  display: grid;
+  grid-template-columns: 1fr;
+}
