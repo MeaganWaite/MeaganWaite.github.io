@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>ACME Wildwest Table</title>
+<meta name="description" content="Sales Table for ACME Wildwest August to December">
+<link rel="stylesheet" href ="https://fonts.googleapis.com/css?family=Tangerine">
+<style>
+
+*{
+font-family: Ubuntu, sans-serif;
+}
+
+table {
+border-collapse: collapse;
+border: 2px solid rgb(200,200,200);
+letter-spacing: 1px;
+font-size: 1.2rem;
+box-shadow: 0px 10px 10px 0px #628ca6;
+}
+
+td, th {
+border: 1px solid rgb(190,190,190);
+padding: 10px 20px;
+text-align: center;
+}
+
+tr:nth-child(even) {
+background: #e7f0ed;
+}
+
+tr:nth-child(odd) {
+background: #e7ffed;
+}
+
+#firstrownames {
+color: #fff;
+background-color: #628ca6;
+font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+<header>
+
+</header>
+
+<main>
+
+<table>
+<thead>
+<th colspan="3" style ="font-size: 2.2rem; background-color: #7fb9c2 ;
+font: #000;">ACME Wildwest</th>
+</thead>
+
+<tbody>
+<tr id="firstrownames">
+<td>Period</td>
+<td>Sales</td>
+<td>Sales Goal</td>
+</tr>
+
+<tr>
+<td>August</td>
+<td>$3,590</td>
+<td>$4,000</td>
+</tr>
+
+<tr>
+<td>September</td>
+<td>$4,420</td>
+<td>$5,000</td>
+</tr>
+
+<tr>
+<td>October</td>
+<td>$4,870</td>
+<td>$5,000</td>
+</tr>
+
+<tr>
+<td>November</td>
+<td>$8,610</td>
+<td style="background-color: #628ca6; color: #fff;">$7,500</td>
+</tr>
+
+<tr>
+<td style="font-style: italic; ">Black Friday</td>
+<td colspan="2" style="background-color: #e7f0ed; text-align: center;">$3,200</td>
+</tr>
+
+<tr>
+<td>December</td>
+<td>$6,820</td>
+<td>$7,500</td>
+</tr>
+
+</tbody>
+
+<tfoot >
+<td colspan="3" style = "background-color: #7fb9c2;"
+font: #000;
+text-align: center;">Compiled 02.27.19 by mWaite</td>
+</tfoot>
+
+</table>
+
+</main>
+
+
+</body>
