@@ -6,9 +6,9 @@
     <title>Southeast Idaho Weather - Preston</title>
     <meta name="description" content="town weather site page for Preston, Idaho">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" media="(min-width: 480px)" href="css/large-7.css">
-    <link rel="stylesheet" href ="css/medium-7.css">
-    <link rel="stylesheet" href ="css/small-7.css">
+    <link rel="stylesheet" media="(min-width: 480px)" href="css/large-8.css">
+    <link rel="stylesheet" href ="css/medium-8.css">
+    <link rel="stylesheet" href ="css/small-8.css">
     <link rel="stylesheet" href ="https://fonts.googleapis.com/css?family=Tangerine">
 </head> 
 
@@ -16,17 +16,17 @@
 <div>
 
 <header>
-        <img id="logo" src="images/sun-logo.png" alt="the sun logo">
+
         <section class ="headings">
+            
         <div class = "motto">
-            <h1>Southeast Idaho Weather</h1>
+            <h1><img id="logo" src="images/sun-logo.png" alt="the sun logo">Southeast Idaho Weather</h1>
             <p id = "instantweather">Instant Weather Information at Your Fingertips</p>
         </div>
         </section>
 </header>
 
-    
-    <nav>
+<nav>
         <ul class="smallnav">
         
                 <li>
@@ -37,54 +37,66 @@
         </ul>
         
         <ul id="menuid" class ="largenav" style="list-style-type: none;">
-            <li><a href="#">Home</a></li>
+            <li><a href="preston-8.html">Home</a></li>
             <li><a class="chosen" href="#">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>   
             <li><a href="#">Fish Haven</a></li>   
-            <li><a href="#">Storm Center</a></li> 
-            <li><a href="gallery-7.html" target="blank">Gallery</a></li>                  
+            <li><a href="#">Storm Center</a></li>  
+            <li><a href="gallery-8.html" target="blank">Gallery</a></li>                  
         </ul>
         
     </nav>
+        
+        <main>
+            <h4 class="noshadow">Weather happening where you are?</h4>
+            <h2 class="noshadow">REPORT IT HERE!</h2>
+                <form action="thankspage.html">
+                    <fieldset>
+                        <legend>Weather Report</legend>
+                        <label class="formfields">First Name:* <input type="text" name="fname" required pattern="[A-Za-z]{5,}"></label>
+                        <label class="formfields">Last Name:* <input type="text" name="lname" required pattern="[A-Za-z]{5,}"></label>
+                        <label class="formfields">Email Address: <input type="email" name="email" placeholder="sample@gmail.com"></label>
+                        <label class="formfields">Phone Number:* <input type="tel" name="phone" required></label>
+                        <label class="formfields">Zip Code:* <input type="number" name="zipCode" required></label>
+                        <label class="formfields">Storm Date: <input type="date" name="date"></label>
+                        <label class="formfields">Type of Storm: <input list="typeOfStorm" name="typeOfStorm"></label>      
+                            <datalist id="typeOfStorm">                     
+                            <option value="Flash Flood"></option>
+                            <option value="Freezing Rain"></option>
+                            <option value="Hail"></option>
+                            <option value="High Winds"></option>                        
+                            <option value="Snow"></option> 
+                            <option value="Thunderstorm"></option>
+                            </datalist>
+                            <input type="submit">
+                            <br>
+                        <label class="formfields">Storm Severity 1-10<input type="range" id="severity" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                            <span id="ratingvalue">5</span><br></label>
+                        <label class="formfields">Storm Region: <select name="region">
+                            <option value="">Please Select &#9662;</option>
+                            <option value="preston">Preston</option>
+                            <option value="soda">Soda Springs</option>
+                            <option value="fish">Fish Haven</option>
+                        </select></label>
+                        <div>Danger Level:</div> 
+                            <label class="stylRadioBut"><input type="radio" name="danger" value="yes"/></label>
+                            <label class="stylRadioBut"><input type="radio" name="danger" value="no"/></label>
+                            <label class="stylRadioBut"><input type="radio" name="danger" value="maybe"/></label>
+                            <br>
+                        <textarea rows="4" cols="50" name="information"> Enter any additional information here...</textarea>                   
+                    </fieldset>
+                    <input type="submit" value="Report My Weather Event" class="theButton">
+                </form>
+                <br>
+            
+                
+            
 
-    <div class = "containermain">
 
-        <h2>Preston</h2>
-
-        <div class="herodiv">
-                <img srcset="images/guide-idaho-map-108942-sm.jpg 320w,
-                            images/guide-idaho-map-108942-med.jpg 480w,
-                            images/guide-idaho-map-108942-lg.jpg 800w"
-                    sizes="(max-width: 320px) 280px,
-                        (max-width: 480px) 440px,
-                        800px"
-                    src="images/guide-idaho-map-108942.jpg" alt="Idaho Map"/>
-                <section class="summary">
-                <h3>Weather Summary</h3>
-                <p>Current Temperature: <span id="currenttemp">78</span></p>
-                <p>Humidity: <span id="humidity">50</span></p>
-                <p>Current Condition: <span id="currentcondition">sunny</span></p>
-                <p>Wind Speed: <span id="windspeed">12</span></p>
-                <p>Wind Chill: <span id="windChillFormula"></span></p>
-            </section>
-        </div>
-
-        <section class="forecast">
-            <h2>Five-day Forecast</h2>
-        </section>
-
-
-        <!-- <article id="article">
-            <h3>Out-of-town Couple Gets Engaged in Preston</h3>
-                <p>by Nobody Knows</p>
-            <img class ="picture" src="images/affection-boyfriend-cold-878668-cropped.jpg" alt="article image">
-                <p>A man from out of town proposed to his girlfriend of three years last Friday afternoon
-                    in the middle of the street on the north end of Preston just outside of town.....
-                </p>
-        </article> -->
+        </main>
                 
 
-    </div>
+</div> 
 
     <footer>
        <p id="currentDate"></p>
@@ -92,9 +104,9 @@
     </footer>
 
  
-</div> 
+
         <script  src="scripts/currentdate.js"></script>
-        <script src="scripts/windchill.js"></script>
+        <script src="scripts/rating.js"></script>
 
 </body>
 </html>

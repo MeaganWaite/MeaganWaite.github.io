@@ -30,17 +30,22 @@ tr:nth-child(odd) {
     background: #e7ffed;        
 }
 
-thead tr, tfoot tr{
+thead, tfoot {
     font-size: 2.2rem;
-    background-color: #7fb9c2;
+    background-color: #7fb9c2 !important;
     color: #000;
     font-weight: bold;
 }
 
+thead tr, tfoot tr {
+    background-color: #7fb9c2 !important;
+}
 tfoot {
     font-size: .85rem;
     font-weight: normal;
 }
+
+
 
      
      
