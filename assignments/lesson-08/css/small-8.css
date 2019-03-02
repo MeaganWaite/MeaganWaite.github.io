@@ -239,7 +239,7 @@ form label.stylRadioBut {
 form input.theButton { 
   border: none;
   background-color: #002491;
-  color: #002491;
+  color: #fff;
   padding: .75rem 1.5rem;
   width: 90%;
   max-width: 20rem;
