@@ -12,19 +12,29 @@ request.onload = function() {
 
 function showInfo(jsonObj) {
     var towns = jsonObj['towns'];
-    if (towns[i].name == "Preston" || towns[i].name == "Fish Haven" ||  towns[i].name == "Soda Springs")     
-         for(var i = 0; i < towns.length; i++) {
-    
+
+    for(var i = 0; i < towns.length; i++) {
+        if (towns[i].name == "Preston" || towns[i].name == "Fish Haven" ||  towns[i].name == "Soda Springs")     
             var myColumn = document.createElement('div.column');
             var myH3 = document.createElement('h3');
-            var myList = document.createElement('ul');
+            var myPara1 = document.createElement('p');
+            var myPara2 = document.createElement('p');
+            var myPara3 = document.createElement('p');
+            var myPara4 = document.createElement('p');
     
             myH3.textContent = towns[i].name;
             myPara1.textContent = towns[i].motto;
             myPara2.textContent = 'Year Founded: ' + towns[i].yearFounded;
             myPara3.textContent = 'Population: ' + towns[i].currentPopulation;      
-            myPara4.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;                   
-        }
+            myPara4.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;  
+
+            // myColumn.appendChild(myH3);
+            // myColumn.appendChild(myPara1);
+            // myColumn.appendChild(myPara2);
+            // myColumn.appendChild(myPara3);
+            // myColumn.appendChild(myPara4);
+
+            }
     }            
     
 
