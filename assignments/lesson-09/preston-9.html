@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+    <title>Southeast Idaho Weather - Preston</title>
+    <meta name="description" content="town weather site page for Preston, Idaho">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" media="(min-width: 480px)" href="css/large-9.css">
+    <link rel="stylesheet" href ="css/medium-9.css">
+    <link rel="stylesheet" href ="css/small-9.css">
+    <link rel="stylesheet" href ="https://fonts.googleapis.com/css?family=Tangerine">
+</head> 
+
+<body>
+<div>
+
+<header>
+        
+        <section class ="headings">
+            
+        <div class = "motto">
+            <h1><img id="logo" src="images/sun-logo.png" alt="the sun logo">Southeast Idaho Weather</h1>
+            <p id = "instantweather">Instant Weather Information at Your Fingertips</p>
+        </div>
+        </section>
+</header>
+
+    
+    <nav>
+        <ul class="smallnav">
+        
+                <li>
+                    <button class="js-menu menu" type="button">
+                        <span class="bar"></span>
+                    </button>&nbsp;Menu
+                </li>
+        </ul>
+        
+        <ul id="menuid" class ="largenav" style="list-style-type: none;">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="chosen" href="preston-9.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>   
+            <li><a href="#">Fish Haven</a></li>   
+            <li><a href="stormcenter.html" target="blank">Storm Center</a></li>  
+            <li><a href="gallery-9.html" target="blank">Gallery</a></li>                  
+        </ul>
+        
+    </nav>
+
+    <div class = "containermain">
+
+        <h2>Preston</h2>
+
+        <div class="herodiv">
+                <img srcset="images/guide-idaho-map-108942-sm.jpg 320w,
+                            images/guide-idaho-map-108942-med.jpg 480w,
+                            images/guide-idaho-map-108942-lg.jpg 800w"
+                    sizes="(max-width: 320px) 280px,
+                        (max-width: 480px) 440px,
+                        800px"
+                    src="images/guide-idaho-map-108942.jpg" alt="Idaho Map"/>
+
+            <section class="summary">
+                <h3>Weather Summary</h3>
+                <p>Current Temperature: <span id="currenttemp">78</span></p>
+                <p>Humidity: <span id="humidity">50</span></p>
+                <p>Current Condition: <span id="currentcondition">sunny</span></p>
+                <p>Wind Speed: <span id="windspeed">12</span></p>
+                <p>Wind Chill: <span id="windChillFormula"></span></p>
+            </section>
+        </div>
+
+        <section class="forecast">
+            <h2>Five-day Forecast</h2>
+            <table class="5dforecast">
+                <tr>
+                    <td>Today</td>
+                    <td>Tomorrow</td>
+                    <td>Day 3</td>
+                    <td>Day 4</td>
+                    <td>Day 5</td>
+                </tr>
+
+                <tr>
+                    <td>Sunny and 75</td>
+                    <td>70</td>
+                    <td>72</td>
+                    <td>78</td>
+                    <td>77</td>
+                </tr>
+            </table>
+        </section>
+
+
+        <article id="article">
+            <h3>Out-of-town Couple Gets Engaged in Preston</h3>
+                <p>by Nobody Knows</p>
+                <div class="herodiv">
+                        <img srcset="images/affection-boyfriend-cold-878668-cropped-lg.jpg 320w,
+                                    images/affection-boyfriend-cold-878668-cropped-med.jpg 480w,
+                                    images/affection-boyfriend-cold-878668-cropped-sm.jpg 800w"
+                            sizes="(max-width: 320px) 280px,
+                                (max-width: 480px) 440px,
+                                800px"
+                            src="images/affection-boyfriend-cold-878668-cropped.jpg" alt="man one one knees proposes marriage to girlfriend"/>
+                <p>A man from out of town proposed to his girlfriend of three years last Friday afternoon
+                    in the middle of the street on the north end of Preston just outside of town..... </p>
+                </div>
+        </article>
+                
+
+    </div>
+
+    <footer>
+       <p id="currentDate"></p>
+        
+    </footer>
+
+ 
+</div> 
+        <script  src="scripts/currentdate.js"></script>
+        <script src="scripts/windchill.js"></script>
+
+</body>
+</html>
