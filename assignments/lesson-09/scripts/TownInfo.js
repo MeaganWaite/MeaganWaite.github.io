@@ -42,7 +42,7 @@ function showInfo(jsonObj) {
             myPara1.textContent = towns[i].motto;
             myPara2.textContent = 'Year Founded: ' + towns[i].yearFounded;
             myPara3.textContent = 'Population: ' + towns[i].currentPopulation;      
-            myPara4.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;  
+            myPara4.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall + ' inches';  
 
             myColumn.appendChild(myH3);
             myColumn.appendChild(myPara1);
