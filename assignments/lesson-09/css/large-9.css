@@ -54,3 +54,11 @@ form label.stylRadioBut {
     padding: .4rem 0;
 }
 
+.column { 
+    border: #000 1px solid;
+    width: 85%;
+}
+
+.mainphotos {
+    width: 85%;
+}
