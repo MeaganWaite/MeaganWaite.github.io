@@ -1,0 +1,64 @@
+@media only screen and (min-width: 961px){ 
+    .largenav { 
+        display: inline-block !important;        
+    }
+
+    #menuid { 
+        display: flex;
+    }
+    .smallnav { 
+        display: none !important;
+    }
+
+    .forecast { 
+        display: inline-block !important;
+    }
+   
+    li {
+        float: left;
+    }
+ 
+    li a {
+        display: inline;
+        padding: 8px; 
+    }
+
+    li a:hover {
+        background-color: #e9eb80;    
+    }
+
+    nav ul {
+        overflow: hidden;
+    }
+
+    .wrapper, .citycolumns { 
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+header { 
+    width: 100%;
+}
+
+ul {
+    display: inline-block;
+}
+ 
+.picandcaption:hover {
+    box-shadow: 0 0 30px; 
+}
+
+form label.stylRadioBut { 
+    padding: .4rem 0;
+}
+
+.column { 
+    border: #000 1px solid;
+    width: 85%;
+}
+
+.mainphotos {
+    width: 85%;
+}
