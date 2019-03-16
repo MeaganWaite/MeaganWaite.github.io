@@ -13,7 +13,7 @@
 </head> 
 
 <body>
-<div>
+
 
 <header>
         
@@ -63,10 +63,10 @@
 
             <section class="summary">
                 <h3>Weather Summary</h3>
-                <p>Current Temperature: <span id="currenttemp">78</span></p>
-                <p>Humidity: <span id="humidity">50</span></p>
-                <p>Current Condition: <span id="currentcondition">sunny</span></p>
-                <p>Wind Speed: <span id="windspeed">12</span></p>
+                <p>Current Temperature: <span id="currenttemp"></span></p>
+                <p>Humidity: <span id="humidity"></span></p>
+                <p>Current Condition: <span id="currentcondition"></span></p>
+                <p>Wind Speed: <span id="windspeed"></span></p>
                 <p>Wind Chill: <span id="windChillFormula"></span></p>
             </section>
         </div>
@@ -74,29 +74,23 @@
         <section class="forecast">
             <h2>Five-day Forecast</h2>
             <table class="5dforecast">
-                <tr>
-                    <td>Today</td>
-                    <td>Tomorrow</td>
-                    <td>Day 3</td>
-                    <td>Day 4</td>
-                    <td>Day 5</td>
-                </tr>
-
-                <tr>
-                    <td>Sunny and 75</td>
-                    <td>70</td>
-                    <td>72</td>
-                    <td>78</td>
-                    <td>77</td>
-                </tr>
             </table>
         </section>
 
+        <section>
+            <h2>Preston Events</h2>
+                <div class=townEvents></div>
 
-        <article id="article">
-            <h3>Out-of-town Couple Gets Engaged in Preston</h3>
-                <p>by Nobody Knows</p>
-                <div class="herodiv">
+        </section>
+           
+                
+
+
+        <!-- <article id="article"> -->
+            
+
+
+                <!-- <div class="herodiv">
                         <img srcset="images/affection-boyfriend-cold-878668-cropped-lg.jpg 320w,
                                     images/affection-boyfriend-cold-878668-cropped-med.jpg 480w,
                                     images/affection-boyfriend-cold-878668-cropped-sm.jpg 800w"
@@ -106,21 +100,27 @@
                             src="images/affection-boyfriend-cold-878668-cropped.jpg" alt="man one one knees proposes marriage to girlfriend"/>
                 <p>A man from out of town proposed to his girlfriend of three years last Friday afternoon
                     in the middle of the street on the north end of Preston just outside of town..... </p>
-                </div>
-        </article>
+                </div> 
+        </article> -->
                 
 
+    
     </div>
-
     <footer>
        <p id="currentDate"></p>
+       <p id="weatherMapOrg"><a href="https://openweathermap.org/" target="blank">Weather information provided by weathermap.org</a></p>
+
         
     </footer>
 
  
-</div> 
-        <script  src="scripts/currentdate.js"></script>
-        <script src="scripts/windchill.js"></script>
+ 
+        <script src="scripts/currentdate.js"></script>
+        <!-- <script src="scripts/windchill.js"></script> -->
+        <script src="scripts/currentWeather.js"></script>
+        <script src="scripts/TownEvents.js"></script>
+        <script src="scripts/weatherForecast.js"></script>
+
 
 </body>
 </html>
