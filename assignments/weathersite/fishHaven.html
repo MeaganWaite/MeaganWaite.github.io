@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+    <title>Southeast Idaho Weather - Preston</title>
+    <meta name="description" content="town weather site page for Preston, Idaho">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" media="(min-width: 480px)" href="css/large-min.css">
+    <link rel="stylesheet" href ="css/medium-min.css">
+    <link rel="stylesheet" href ="css/small-min.css">
+    <link rel="stylesheet" href ="https://fonts.googleapis.com/css?family=Tangerine">
+</head> 
+
+<body>
+
+
+<header>
+        
+        <section class ="headings">
+            
+        <div class = "motto">
+            <h1><img id="logo" src="images/sun-logo.png" alt="the sun logo">Southeast Idaho Weather</h1>
+            <p id = "instantweather">Instant Weather Information at Your Fingertips</p>
+        </div>
+        </section>
+</header>
+
+    
+    <nav id="navMenu">
+        <ul class="smallnav">
+        
+                <li>
+                    <button class="js-menu menu" type="button">
+                        <span class="bar"></span>
+                    </button>&nbsp;Menu
+                </li>
+        </ul>
+        
+        <ul id="menuid" class ="largenav" style="list-style-type: none;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodaSprings.html">Soda Springs</a></li>   
+            <li><a class="chosen" href="fishHaven.html">Fish Haven</a></li>   
+            <li><a href="stormcenter.html" target="blank">Storm Center</a></li>  
+            <li><a href="gallery.html" target="blank">Gallery</a></li>                  
+        </ul>
+        
+    </nav>
+
+    <div class = "containermain">
+
+        <h2 class="h2Header">Fish Haven</h2>
+
+        <div class="herodiv">
+                <img class = "cityBanner" srcset="images/fish-haven-banner-sm.jpg 320w,
+                            images/fish-haven=banner-med.jpg 480w,
+                            images/fish-haven-banner-lg.jpg 800w"
+                    sizes="(max-width: 320px) 280px,
+                        (max-width: 480px) 440px,
+                        800px"
+                    src="images/fish-haven-banner-lg.jpg" alt="bird's eye view of Fish Haven, Idaho"/>
+
+            <section class="summary">
+                <h3>Weather Summary</h3>
+                <p>Current Temperature: <span id="currenttempFH"></span></p>
+                <p>Humidity: <span id="humidityFH"></span></p>
+                <p>Current Condition: <span id="currentconditionFH"></span></p>
+                <p>Wind Speed: <span id="windspeedFH"></span></p>
+                <p>Wind Chill: <span id="windChillFormula"></span></p>
+            </section>
+        </div>
+
+        <section class="forecast">
+            <h2 class="h2Header">Five-day Forecast</h2>
+            <table class="5dforecast">
+            </table>
+        </section>
+
+        <section>
+            <h2>Fish Haven Events</h2>
+                <div class=townEvents></div>
+
+        </section>        
+                
+        <article class="article">     
+            <div class="herodiv2"> 
+                    <img src="images/Biggest_Blue_Catfish_Records-article.jpg" alt="147-pound catfish"/>
+                    <h6>The Biggest Fish Story</h6>
+                    <p>by I. Tellstory </p>
+                    <p>A resident of Fish Haven just might have the biggest fish story yet.</p>
+                    <p>While on vacation in southern Virginia, Bob Willis caught what he claims to be a 147-pound blue catfish on Lake Kerr.
+                        If this is true, he beat the North American record set in 2011 by four pounds. Blue catfish typically weigh between 20 and 40 pounds are usually measure 
+                        between 25 and 40 inches. If this fish story is to be believed, then it's likely that Mr. Willis' fish is five to seven times the size of a normal blue catfish.
+                        Oddly enough, the current record-holder also pulled his prize-winning haul from the same lake during the same month 8 years ago. And what is his name? Will Roberts.
+                        This sounds more and more like an unbelievable coincidence. 
+            </div> 
+        </article>
+                
+
+    
+    </div>
+    <footer id = "grid-container">
+            <div>
+                <iframe id = "item1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11852.958830505177!2d-111.40486806217935!3d42.03803991735526
+                !2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875415e9bdab006f%3A0xc1864ed86dd2b0e4!2sFish+Haven%2C+ID+83287!5e0!3m2!1sen!2sus!4v1553279740836"></iframe>
+            </div>
+
+            <div id="item2">
+                <p>Contact Info: contact@southeastidahoweather.com</p>
+                <p>Preston, Idaho 83263 | 208-555-1212</p>
+            </div>
+            <div id="item3"><p id="currentDate"></p></div>
+            <div id = "item4"><p id="weatherMapOrg"><a href="https://openweathermap.org/" target="blank">Weather information provided by weathermap.org</a></p></div>   
+        
+    </footer>
+
+ 
+ 
+        <script src="scripts/currentdate.js"></script>
+        <!-- <script src="scripts/windchill.js"></script> -->
+        <script src="scripts/currentWeatherFishHaven.js"></script>
+        <script src="scripts/TownEventsFishHaven.js"></script>
+        <script src="scripts/weatherForecastFishHaven.js"></script>
+
+
+</body>
+</html>

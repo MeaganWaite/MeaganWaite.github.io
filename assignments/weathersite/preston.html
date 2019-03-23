@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+    <title>Southeast Idaho Weather - Preston</title>
+    <meta name="description" content="town weather site page for Preston, Idaho">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href ="css/medium-min.css">
+    <link rel="stylesheet" href ="css/small-min.css">
+    <link rel="stylesheet" media="(min-width: 480px)" href="css/large-min.css">
+
+    <link rel="stylesheet" href ="https://fonts.googleapis.com/css?family=Tangerine">
+</head> 
+
+<body>
+
+
+<header>
+        
+        <section class ="headings">
+            
+        <div class = "motto">
+            <h1><img id="logo" src="images/sun-logo.png" alt="the sun logo">Southeast Idaho Weather</h1>
+            <p id = "instantweather">Instant Weather Information at Your Fingertips</p>
+        </div>
+        </section>
+</header>
+
+    
+    <nav id="navMenu">
+        <ul class="smallnav">
+        
+                <li>
+                    <button class="js-menu menu" type="button">
+                        <span class="bar"></span>
+                    </button>&nbsp;Menu
+                </li>
+        </ul>
+        
+        <ul id="menuid" class ="largenav" style="list-style-type: none;">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="chosen" href="preston.html">Preston</a></li>
+            <li><a href="sodaSprings.html">Soda Springs</a></li>   
+            <li><a href="fishHaven.html">Fish Haven</a></li>   
+            <li><a href="stormcenter.html" target="blank">Storm Center</a></li>  
+            <li><a href="gallery.html" target="blank">Gallery</a></li>                  
+        </ul>
+        
+    </nav>
+
+    <div class = "containermain">
+
+        <h2 class="h2Header">Preston</h2>
+
+        <div class="herodiv">
+                <img class="cityBanner" srcset="images/preston-banner-image-sm.jpg 320w,
+                            images/preston-banner-image-med.jpg 480w,
+                            images/preston-banner-image-lg.jpg 800w"
+                    sizes="(max-width: 320px) 280px,
+                        (max-width: 480px) 440px,
+                        800px"
+                    src="images/preston-banner-image-lg.jpg" alt="bird's eye view of Preston, Idaho"/>
+
+            <section class="summary">
+                <h3>Weather Summary</h3>
+                <p>Current Temperature: <span id="currenttemp"></span></p>
+                <p>Humidity: <span id="humidity"></span></p>
+                <p>Current Condition: <span id="currentcondition"></span></p>
+                <p>Wind Speed: <span id="windspeed"></span></p>
+                <p>Wind Chill: <span id="windChillFormula"></span></p>
+            </section>
+        </div>
+
+        <section class="forecast">
+            <h2 class="h2Header">Five-day Forecast</h2>
+            <table class="5dforecast">
+
+            </table>
+        </section>
+
+        <section>
+            <h2>Preston Events</h2>
+                <div class=townEvents></div>
+
+        </section>        
+                
+        <article class="article">     
+            <div class="herodiv2"> 
+                    <img src="images/affection-boyfriend-cold-878668-cropped-med.jpg" alt="man one one knees proposes marriage to girlfriend"/>
+                    <h6>Surprise Pop</h6>
+                    <p>by Nobody Knows</p>
+                    <p>A man from out of town proposed to his girlfriend of three years last Friday afternoon
+                    in the middle of the street on the north end of Preston just outside of town. John Smith said he and his girlfriend, Mary King, were traveling together from their
+                    repective homes in Indiana to John's family reunion in Pocatello and stopped in Preston for gas. It had snowed a few days before and John said, "The scene was a perfect backdrop 
+                    for me. I've had Mary's ring in my pocket for a few weeks now, and it just felt like the right time and place." Mary had no idea this was coming. "It was a real surprise, but 
+                    I'm so excited! In fact, we may come back to this quaint little town to have our reception." </p>
+            </div> 
+        </article>
+                
+
+    
+    </div>
+    <footer id = "grid-container">
+            <div>
+                <iframe id="item1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94731.38143520687!2d-111.95053786182898!3d42.
+                09985292461637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C+ID+83263!5e0!3m2!1sen!2sus!4v1550460752672"></iframe>
+            </div>
+
+            <div id="item2">
+                <p>Contact Info: contact@southeastidahoweather.com</p>
+                <p>Preston, Idaho 83263 | 208-555-1212</p>
+            </div>
+            <div id="item3"><p id="currentDate"></p></div>
+            <div id = "item4"><p id="weatherMapOrg"><a href="https://openweathermap.org/" target="blank">Weather information provided by weathermap.org</a></p></div>   
+        
+    </footer>
+
+ 
+ 
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/currentWeather.js"></script>
+        <script src="scripts/TownEvents.js"></script>
+        <script src="scripts/weatherIcons.js"></script>
+
+
+</body>
+</html>

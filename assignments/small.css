@@ -1,0 +1,341 @@
+body{
+    background-color: #e9eb80;    
+    font-size: 14px;
+    line-height: 32px;
+    font-family: "work sans, sans-serif";
+}
+    
+h1{
+    font-family: roboto, Arial, Helvetica, sans-serif; 
+    text-align: center;
+    font-size: 36px;
+    color: #fff;
+}
+
+h3 {
+    font-family: roboto, Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 24px;
+}
+
+p{
+    font-size: 16px;
+}
+
+header { 
+    flex: auto;
+    background-color: #006c91;
+    /* border: 1px solid #002491; */
+    text-align: center;
+    font-family: roboto, Arial, Helvetica, sans-serif; 
+    color: white;
+} 
+
+footer { 
+  background-color: #006c91;
+  text-align: center;
+  font-family: roboto, Arial, Helvetica, sans-serif; 
+  color: white;
+}
+
+#instantweather { 
+  color: #fff;
+}
+
+.article {
+    max-width: 97%;
+    margin: auto;
+    border: 1px solid #002491;
+    padding: 10px;
+}
+
+.hero-picture { 
+    position: relative;
+    width: 100%;
+    margin:px auto;
+    text-align: center;
+    height: 300px;
+} 
+
+nav {
+    flex: auto; 
+    background-color: #006c91;
+    border: 1px solid #002491;
+    text-align: center;
+    color: #ffffff;
+    font-family: roboto, Arial, Helvetica, sans-serif; 
+}
+
+.menu {
+    transition: 0.1s -webkit-transform linear;
+    transition: 0.1s transform linear;
+    transition: 0.1s transform linear, 0.1s -webkit-transform linear;
+    position: relative;
+    background: 0;
+    float: left;
+    margin-left: 2rem;
+    height: 1.7rem;
+    width: 2.5rem;
+    z-index: 1;
+    outline: 0;
+    padding: 0;
+    border: 0;
+  }
+  
+  .bar, .bar::before, .bar::after {
+    transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s -webkit-transform linear;
+    transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s transform linear;
+    transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s transform linear, 0.2s -webkit-transform linear;
+    position: absolute;
+    background: #fff;
+    margin: auto;
+    width: 100%;
+    height: 0.2rem;
+    content: '';
+    top: 50%;
+    left: 0;
+  }
+  .bar {
+    margin-top: -0.3rem;
+  }
+  .bar::before {
+    top: -0.7rem;
+  }
+  .bar::after {
+    top: 0.7rem;
+  }
+  .bar::before, .bar::after {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  .active .bar {
+    background: 0;
+  }
+  .active .bar::before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .active .bar::after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  .active .bar::before, .active .bar::after {
+    top: 0;
+  }
+  .active .bar, .active .bar::before, .active .bar::after {
+    transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s -webkit-transform linear 0.2s;
+    transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s;
+    transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s, 0.2s -webkit-transform linear 0.2s;
+  }
+  
+  #grid-container{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+    align-content: space-between;
+  }
+
+  #item1 {
+    grid-column: 1;
+  }
+
+  #item2 {
+    grid-column: 2;
+  }
+
+   #item3 {
+     grid-column: 1;
+   }
+
+   #item4 {
+     grid-column: 2;
+   }
+
+  .largenav {
+      display: none;
+  }
+
+  nav ul{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+  }
+
+  nav a { 
+      display: block;
+      padding: 5px;
+      color: #ffffff;
+      text-decoration: none;
+      border-width: 0px 0px 1px 0px;
+      border-style: solid;
+    
+  }
+
+  .chosen{
+      background-color: #00916e;
+  }
+
+  .motto{
+      font-size: 14px;
+  }
+
+  header img{
+      width: 50px;
+      height: auto;
+  }
+
+  header, .headings{
+      display: flex;
+      justify-content: center;
+      font-family: roboto, Arial, Helvetica, sans-serif;    
+  }
+
+  .containermain {
+      margin-left: .5rem;
+      display: inline-block;
+  }
+
+  h2, h4, h5, h6 {
+      text-align: center;
+      font-size:2rem;
+      /* text-shadow:3px 3px 5px #777; */
+  }
+
+  .herodiv {
+      position: relative;
+      width: 100%;
+      justify-content: center;
+        }
+
+  .summary {
+    position: absolute;
+    top: 10px;
+    left: 80px;
+      /* background: radial-gradient (#eee, #4567aa;); */
+      background-color: white;
+      opacity: .5;
+    border: 1px solid #000;
+    padding: 1.5rem;
+    box-shadow: 0 0 30px #fff;
+    /* color: black;
+    text-emphasis-color: black; */
+  }
+
+  .forecast {
+      position: relative; 
+      display: none;
+      width: 85%;
+      margin-left: 7%;
+  }
+
+  .item1 {
+    grid-column: 1/3;
+  }
+
+  .wrapper, { 
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  form fieldset { 
+    margin: 2rem;
+    padding: .5rem;
+    color: #002491;
+    font-family: roboto, Arial, Helvetica, sans-serif;
+  }
+
+  .formfields  { 
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  form legend { 
+    color: #002491;
+    padding: .5rem;
+    margin: .5rem;
+  }
+
+  form label.formfields input, form label.formfields select { 
+    display: block;
+    padding: .75rem;
+    color: #002491;
+    width: 100%;
+    max-width: 20rem;
+    background-color: white;
+    margin-top: -.5rem;
+    /* margin-left: auto;
+    margin-right: auto; */
+  }
+
+  form label.stylRadioBut { 
+    display: block;
+    padding: .00rem;
+  }
+
+  form input.theButton { 
+    border: none;
+    background-color: #002491;
+    color: #fff;
+    padding: .75rem 1.5rem;
+    width: 90%;
+    max-width: 20rem;
+    margin-left: 3rem;
+  }
+
+  .thx { 
+    box-shadow: none !important;
+  }
+
+  table {
+    align-content: center;
+    border-collapse: collapse;
+    border: 2px solid #002491;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+
+    td {
+      border: 1px solid #002491;
+      padding: 10px 20px;
+      text-align: center;
+  }
+
+  .noshadow {
+    text-shadow: none;
+  }
+
+  .citycolumns { 
+    display: grid;
+    /* grid-template-columns: auto auto auto; */
+    grid-template-columns: 1fr;
+    margin: 20px;  
+    grid-row-gap: 5px;
+  }
+
+  .column { 
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  #weatherMapOrg a {
+    color: white;
+  }
+
+  .townEvents {
+    font-family: roboto, Arial, Helvetica, san serif;
+    font-size: 1.3rem;
+    color: black;
+    text-align: center;
+  }
+
+.herodiv2 h6 {
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+}

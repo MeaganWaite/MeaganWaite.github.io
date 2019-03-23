@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+    <title>Southeast Idaho Weather - Home Page</title>
+    <meta name="description" content="town weather site home page for Preston, Idaho">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-min.css">    
+    <link rel="stylesheet" media="(min-width: 480px) and (max-width: 960px)" href ="css/medium-min.css">
+    <link rel="stylesheet" media="(min-width: 961px)" href="css/large-min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+</head> 
+
+<body>
+<div>
+
+<header>
+        
+        <section class ="headings">
+            
+        <div class = "motto">
+            <h1><img id="logo" src="images/sun-logo.png" alt="the sun logo">Southeast Idaho Weather</h1>
+            <p id = "instantweather">Instant Weather Information at Your Fingertips</p>
+        </div>
+        </section>
+</header>
+
+    
+    <nav id="navMenu">
+        <ul class="smallnav">
+        
+                <li>
+                    <button class="js-menu menu" type="button">
+                        <span class="bar"></span>
+                    </button>&nbsp;Menu
+                </li>
+        </ul>
+        
+        <ul id="menuid" class ="largenav" style="list-style-type: none;">
+            <li><a class="chosen" href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodaSprings.html">Soda Springs</a></li>   
+            <li><a href="fishHaven.html">Fish Haven</a></li>   
+            <li><a href="stormcenter.html" target="blank">Storm Center</a></li>  
+            <li><a href="gallery.html" target="blank">Gallery</a></li>                  
+        </ul>
+        
+    </nav>
+
+        <div class="citycolumns"></div>
+
+       
+
+
+        <article class ="article">
+            <div class ="herodiv2">
+                <img src="images/football-article.jpg" alt="N F L Football"/>
+                <h3>Tri-City Area Gets Newest NFL Team</h3>
+                <p>by Dream Big</p>                            
+                <p>The NFL has plans to add two new teams to the league, and Southeast Idaho is getting one of them.</p>
+                <p>The new team will be knows as the Idaho Iguanas. Their colors are pink and purple. To save money, they will not build a new stadium but 
+                    will practice and play at the three high schools in the area, rotating between them for home games. Peyton Manning has volunteered to donate
+                    his time to coach the team, and he has announced open tryout for both the team itself as well as the cheerleading squad. The date has not yet
+                    been announced.</p>
+                </div>
+        </article>
+                
+
+    </div>
+
+    <footer id="grid-container" style="width: 100%;">
+        <div>
+            <iframe id="item1" src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503352.6259845558!2d-113.13021102950678!3d42.613959157936875!2m3!
+            1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875571901ccf5aa7%3A0xb49243d1853b53f9!2sSoutheast+Idaho+High+Country+Tourism!5e0!3m2!1sen!2sus!4v1553284650950"></iframe>
+        </div>
+
+        <div id="item2">
+            <p>Contact Info: contact@southeastidahoweather.com</p>
+            <p>Preston, Idaho 83263 | 208-555-1212</p>
+        </div>
+        <div id="item3"><p id="currentDate"></p></div>
+        <div id = "item4"><p id="weatherMapOrg"><a href="https://openweathermap.org/" target="blank">Weather information provided by weathermap.org</a></p></div>   
+        
+    </footer>
+     
+      
+<script src = "scripts/currentdate.js"></script>
+<script src = "scripts/TownInfo.js"></script>
+             
+
+</body>
+</html>

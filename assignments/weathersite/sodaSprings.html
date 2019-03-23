@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+    <title>Southeast Idaho Weather - Preston</title>
+    <meta name="description" content="town weather site page for Preston, Idaho">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" media="(min-width: 480px)" href="css/large-min.css">
+    <link rel="stylesheet" href ="css/medium-min.css">
+    <link rel="stylesheet" href ="css/small-min.css">
+    <link rel="stylesheet" href ="https://fonts.googleapis.com/css?family=Tangerine">
+</head> 
+
+<body>
+
+
+<header>
+        
+        <section class ="headings">
+            
+        <div class = "motto">
+            <h1><img id="logo" src="images/sun-logo.png" alt="the sun logo">Southeast Idaho Weather</h1>
+            <p id = "instantweather">Instant Weather Information at Your Fingertips</p>
+        </div>
+        </section>
+</header>
+
+    
+    <nav id="navMenu">
+        <ul class="smallnav">
+        
+                <li>
+                    <button class="js-menu menu" type="button">
+                        <span class="bar"></span>
+                    </button>&nbsp;Menu
+                </li>
+        </ul>
+        
+        <ul id="menuid" class ="largenav" style="list-style-type: none;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a class="chosen" href="sodaSprings.html">Soda Springs</a></li>   
+            <li><a href="fishHaven.html">Fish Haven</a></li>   
+            <li><a href="stormcenter.html" target="blank">Storm Center</a></li>  
+            <li><a href="gallery.html" target="blank">Gallery</a></li>                  
+        </ul>
+        
+    </nav>
+
+    <div class = "containermain">
+
+        <h2 class="h2Header">Soda Springs</h2>
+
+        <div class="herodiv">
+                <img class="cityBanner" srcset="images/soda-springs-banner-sm.jpg 320w,
+                            images/soda-springs-banner-med.jpg 480w,
+                            images/soda-springs-banner-lg.jpg 800w"
+                    sizes="(max-width: 320px) 280px,
+                        (max-width: 480px) 440px,
+                        800px"
+                    src="images/soda-springs-banner-lg.jpg" alt="bird's eye view of Soda Springs, Idaho"/>
+
+            <section class="summary">
+                <h3>Weather Summary</h3>
+                <p>Current Temperature: <span id="currenttempSS"></span></p>
+                <p>Humidity: <span id="humiditySS"></span></p>
+                <p>Current Condition: <span id="currentconditionSS"></span></p>
+                <p>Wind Speed: <span id="windspeedSS"></span></p>
+                <p>Wind Chill: <span id="windChillFormula"></span></p>
+            </section>
+        </div>
+
+        <section class="forecast">
+            <h2 class="h2Header">Five-day Forecast</h2>
+            <table class="5dforecast">
+            </table>
+        </section>
+
+        <section>
+            <h2>Preston Events</h2>
+                <div class=townEvents></div>
+
+        </section>        
+                
+        <article class="article">     
+            <div class="herodiv2"> 
+                    <img src="images/soda-springs-geyser-photo-article.jpg" alt="geyser at Soday Springs"/>
+                    <h6>Who Turned Off the Water?</h6>
+                    <p>by Staff Writer </p>
+                    <p>If the new mayor of Soda Springs has his way, the town might have to change its name. </p>
+                    <p>Mayor Troublemaker wants to cap the geyser that gave the town its name. He want to rechannel all the energy from the spring to a new mansion
+                        he is planning to build for himself on the outskirts of town. The water will flow directly into his personal pool and drain magically into 
+                        the ground. The heat from the geyser will supply his house with enough energy to power a small country. And he plans on excising a 10% increase 
+                        in property taxes as well as a a 4% higher sales tax rate to pay for his new accommodations. 
+            </div> 
+        </article>
+                
+
+    
+    </div>
+    <footer id = "grid-container">
+            <div>
+                <iframe id = "item1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23471.978815606635!2d-111.60632454003422!3d42.66141151018074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+                1!3m3!1m2!1s0x8755968bb0047ae5%3A0x9d3970a1a6df8e12!2sSoda+Springs%2C+ID+83276!5e0!3m2!1sen!2sus!4v1553279948014"></iframe>
+            </div>
+
+            <div id="item2">
+                <p>Contact Info: contact@southeastidahoweather.com</p>
+                <p>Preston, Idaho 83263 | 208-555-1212</p>
+            </div>
+            <div id="item3"><p id="currentDate"></p></div>
+            <div id = "item4"><p id="weatherMapOrg"><a href="https://openweathermap.org/" target="blank">Weather information provided by weathermap.org</a></p></div>   
+        
+    </footer>
+
+ 
+ 
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/currentWeatherSodaSprings.js"></script>
+        <script src="scripts/TownEventsSodaSprings.js"></script>
+        <script src="scripts/weatherForecastSodaSprings.js"></script>
+
+
+</body>
+</html>

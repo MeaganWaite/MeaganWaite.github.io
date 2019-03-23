@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+    <title>Southeast Idaho Weather - Preston</title>
+    <meta name="description" content="town weather site page for Preston, Idaho">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" media="(min-width: 480px)" href="css/large-min.css">
+    <link rel="stylesheet" href ="css/medium-min.css">
+    <link rel="stylesheet" href ="css/small-min.css">
+    <link rel="stylesheet" href ="https://fonts.googleapis.com/css?family=Tangerine">
+</head> 
+
+<body>
+<div>
+
+<header>
+
+        <section class ="headings">
+            
+        <div class = "motto">
+            <h1><img id="logo" src="images/sun-logo.png" alt="the sun logo">Southeast Idaho Weather</h1>
+            <p id = "instantweather">Instant Weather Information at Your Fingertips</p>
+        </div>
+        </section>
+</header>
+
+    <nav id="navMenu"  >
+        <ul class="smallnav">
+        
+                <li>
+                    <button class="js-menu menu" type="button">
+                        <span class="bar"></span>
+                    </button>&nbsp;Menu
+                </li>
+        </ul>
+        
+        <ul id="menuid" class ="largenav" style="list-style-type: none;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodaSprings.html">Soda Springs</a></li>   
+            <li><a href="fishHaven.html">Fish Haven</a></li>   
+            <li><a class="chosen" href="stormcenter.html">Storm Center</a></li>  
+            <li><a href="gallery.html" target="blank" target="blank">Gallery</a></li>                  
+        </ul>
+        
+    </nav>
+        
+        <main>
+            <h4 class="noshadow">Weather happening where you are?</h4>
+            <h2 class="noshadow">REPORT IT HERE!</h2>
+                <form action="thankspage.html">
+                    <fieldset>
+                        <legend>Weather Report</legend>
+                        <label class="formfields">First Name:* <input type="text" name="fname" required pattern="[A-Za-z]{5,}"></label>
+                        <label class="formfields">Last Name:* <input type="text" name="lname" required pattern="[A-Za-z]{5,}"></label>
+                        <label class="formfields">Email Address: <input type="email" name="email" placeholder="sample@gmail.com"></label>
+                        <label class="formfields">Phone Number:* <input type="tel" name="phone" required></label>
+                        <label class="formfields">Zip Code:* <input type="number" name="zipCode" required></label>
+                        <label class="formfields">Storm Date: <input type="date" name="date"></label>
+                        <label class="formfields">Type of Storm: <input list="typeOfStorm" name="typeOfStorm"></label>      
+                            <datalist id="typeOfStorm">                     
+                            <option value="Flash Flood"></option>
+                            <option value="Freezing Rain"></option>
+                            <option value="Hail"></option>
+                            <option value="High Winds"></option>                        
+                            <option value="Snow"></option> 
+                            <option value="Thunderstorm"></option>
+                            </datalist>
+                            <input type="submit">
+                            <br>
+                        <label class="formfields">Storm Severity 1-10<input type="range" id="severity" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                            <span id="ratingvalue">5</span><br></label>
+                        <label class="formfields">Storm Region: <select name="region">
+                            <option value="">Please Select &#9662;</option>
+                            <option value="preston">Preston</option>
+                            <option value="soda">Soda Springs</option>
+                            <option value="fish">Fish Haven</option>
+                        </select></label>
+                        <div>Danger Level:</div> 
+                            <label class="stylRadioBut"><input type="radio" name="danger" value="yes"/>Yes</label>
+                            <label class="stylRadioBut"><input type="radio" name="danger" value="no"/>No</label>
+                            <label class="stylRadioBut"><input type="radio" name="danger" value="maybe"/>Maybe</label>
+                            <br>
+                        <textarea rows="4" cols="50" name="information"> Enter any additional information here...</textarea>                   
+                    </fieldset>
+                    <input type="submit" value="Report My Weather Event" class="theButton">
+                </form>
+                <br>
+            
+                
+            
+
+
+        </main>
+                
+
+</div> 
+
+<footer id = "grid-container">
+        <div>
+            <iframe id="item1" src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503352.6259845558!2d-113.13021102950678!3d42.613959157936875!2m3!
+            1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875571901ccf5aa7%3A0xb49243d1853b53f9!2sSoutheast+Idaho+High+Country+Tourism!5e0!3m2!1sen!2sus!4v1553284650950"></iframe>
+        </div>
+
+        <div id="item2">
+            <p>Contact Info: contact@southeastidahoweather.com</p>
+            <p>Preston, Idaho 83263 | 208-555-1212</p>
+        </div>
+        <div id="item3"><p id="currentDate"></p></div>
+        <div id = "item4"><p id="weatherMapOrg"><a href="https://openweathermap.org/" target="blank">Weather information provided by weathermap.org</a></p></div>   
+    
+</footer>
+
+ 
+
+        <script  src="scripts/currentdate.js"></script>
+        <script src="scripts/rating.js"></script>
+
+</body>
+</html>
