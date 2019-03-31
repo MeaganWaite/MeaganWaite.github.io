@@ -1,0 +1,75 @@
+@media only screen and (min-width: 1021px) { 
+    
+    fieldset {
+        margin: auto;
+    }
+
+    .largeNavMenu { 
+        display: inline-flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #menuID {
+        display: flex;
+    }
+    
+    nav ul {
+        overflow: hidden;
+    }
+
+    
+    ul {
+        display: inline-block;
+    }
+
+    .homePhotos {
+        margin: 5px;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .picAndCaption {
+        font-family: "PT Sans";
+        font-size: 1.2rem;
+        text-align: center;    
+    }
+
+    .picAndCaption:hover {
+        border: 3px solid #8cadae;
+    }
+   
+    .form-inline {  
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+    } 
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-gap: 10px;
+        padding: 10px;
+        align-content: space-between;
+    }
+
+    /* #grid1 {
+        grid-column: 1;
+    }
+
+    #grid3 {
+        grid-column: 3;
+    }
+
+    #grid5 {
+        grid-column: 1;
+    }
+
+    #grid7 {
+        grid-column: 3;
+    } */
+
+   

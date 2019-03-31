@@ -1,0 +1,98 @@
+{"temples" : [
+    {
+        "name": "Salt Lake Utah Temple",
+        "address": "50 W North Temple St, Salt Lake City, Utah 84150",
+        "email": "saltlaketemple@lds.org",
+        "phone": "801-240-2640",
+        "oschedule": "Please call for our ordinance schedule",
+        "sschedule": "6am to 7pm, every hour on the hour",
+        "closes": ["Saturday, 6 April 2019", 
+        "Tuesday, 2 July 2019 - Monday, 15 July 2019", 
+        "Wednesday, 24 July 2019", 
+        "Saturday, 5 October 2019",
+        "Wednesday, 27 November 2019 (Limited Hours)",
+        "Thursday, 28 November 2019 - Friday, 29 November 2019",
+        "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
+        "Tuesday, 31 December 2019" ],
+        "history": "The Salt Lake City temple was announced on 28 July 1847. 
+        Groundbreaking began 14 February 1853. It was dedicated on 6 April 1893.",
+        "services" :[
+            "Clothing Rental",
+            "On-site Cafeteria",
+            "Nearby Distribution Center"
+        ] 
+
+    }
+    {
+        "name": "Los Angeles California Temple",
+        "address": "10777 Santa Monica Blvd, Los Angeles, California, 90025",
+        "email": "latemple@lds.org",
+        "phone": "310-474-5569",
+        "oschedule": "Please call for our ordinance schedule.",
+        "sschedule": "5:30am to 7:30pm, every one hour and forty-five minutes",
+        "closes": ["Saturday, 6 April 2019", 
+            "Tuesday, 25 June 2019 - Monday, 30 September 2019",  
+            "Saturday, 5 October 2019",
+            "Wednesday, 27 November 2019 - Thursday, 28 November 2019",
+            "Friday, 29 November 2019 (Limited Hours)",
+            "Tuesday, 24 December 2019 - Thursday, 26 December 2019",
+            "Tuesday, 31 December 2019" ],
+        "history": "The Los Angeles California temple was announced on 6 March 1937. 
+        Groundbreaking began 22 September 1951. It was dedicated on 11 March 1956.",
+        "services" :[
+            "Clothing Rental",
+            "On-site Cafeteria",
+            "Nearby Distribution Center"
+            "Patron Housing Available"
+        ] 
+
+    }
+    {
+        "name": "Seattle Washington Temple",
+        "address": "2808 148th Ave SE, Bellevue, Washington, 98007",
+        "email": "seattletemple@lds.org",
+        "phone": "425-643-5144",
+        "oschedule": "Please call for our ordinance schedule.",
+        "sschedule": "5:30am, 6:30am, 7:30pm, as well as 8am to 7pm every hour on the hour ",
+        "closes": ["Saturday, 6 April 2019", 
+        "Thursday 4 July 2019", 
+        "Saturday, 5 October 2019",
+        "Wednesday, 27 November 2019 - Thursday, 28 November 2019",
+        "Friday, 29 November 2019 (Limited Hours)",
+        "Tuesday, 24 December 2019 - Thursday, 26 December 2019",
+        "Tuesday, 31 December 2019" ],
+        "history": "The Seattle Washington temple was announced on 15 November 1975. 
+        Groundbreaking began 27 May 1978. It was dedicated on 17 November 1980.",
+        "services" :[
+            "Clothing Rental",
+            "On-site Cafeteria",
+            "Nearby Distribution Center"
+        ] 
+
+    }
+    {
+        "name": "Atlanta Georgia Temple",
+        "address": "6450 Barfield Rd NE, Sandy Springs, Georgia, 30328",
+        "email": "atlantatemple@lds.org",
+        "phone": "770-393-3698",
+        "oschedule": "Please call for our ordinance schedule.",
+        "sschedule": "10am, 11am, 12pm, 6pm, 7pm, 8pm",
+        "closes": ["Monday, 25 March 2019 - Monday, 8 April 2019", 
+            "Thursday 4 July 2019", 
+            "Monday, 23 September 2019 - Monday, 7 October 2019",
+            "Saturday, 9 November 2019 (Limited Hours)",
+            "Wednesday, 27 November 2019 (Limited Hours)".
+            "Thursday, 28 November 2019",
+            "Tuesday, 24 December 2019 (Limited Hours)",
+            "Wednesday, 25 December 2019",
+            "Tuesday, 31 December 2019 (Limited Hours)" ],,
+        "history": "The Atlanta George temple was announced on 2 April 1980. 
+        The groundbreaking took place on 7 March 1981. The original dedication was on 1 June 1983
+        with subsequent rededications on 14 November 1997 and 1 May 2011.",
+        "services" :[
+            "Nearby Distribution Center",
+        ] 
+
+    } 
+]
+}

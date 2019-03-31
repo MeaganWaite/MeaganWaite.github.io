@@ -153,9 +153,9 @@ nav {
      grid-column: 2;
    }
 
-  .largenav {
+  /* .largenav {
       display: none;
-  }
+  } */
 
   nav ul{
       list-style-type: none;

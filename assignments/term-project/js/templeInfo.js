@@ -1,6 +1,6 @@
 
-var column = document.querySelector('div.citycolumns');
-var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+var column = document.querySelector('div.wrapper');
+var requestURL = 'json/';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
@@ -53,9 +53,3 @@ function showInfo(jsonObj) {
             myColumn.appendChild(myPara4);
             myColumn.appendChild(myImg);
             column.appendChild(myColumn);
-           
-        }
-        
-    }            
-}
-
