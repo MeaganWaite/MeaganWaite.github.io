@@ -1,55 +1,91 @@
 
-var column = document.querySelector('div.wrapper');
-var requestURL = 'json/';
+var grid = document.querySelector('div.wrapper');
+var requestURL = 'https://MeaganWaite.github.io/assignments/term-project/json/temples.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
 request.onload = function() {
-    var townInfo = request.response;
-    showInfo(townInfo);
+    var templeInfo = request.response;
+    showInfo(templeInfo);
 }
 
 function showInfo(jsonObj) {
-    var towns = jsonObj['towns'];
-    //get the parent div for the city info
-    for(var i = 0; i < towns.length; i++) {
-        if (towns[i].name == "Preston" || towns[i].name == "Fish Haven" ||  towns[i].name == "Soda Springs") {
-            var myColumn = document.createElement('div');
-            myColumn.classList.add("column");
+    var temples = jsonObj['temples'];
+    
+    for(var i = 0; i < temples.length; i++) {
+       
+            var myGrid = document.createElement('div');
             var myH3 = document.createElement('h3');
             var myPara1 = document.createElement('p');
             var myPara2 = document.createElement('p');
             var myPara3 = document.createElement('p');
             var myPara4 = document.createElement('p');
+            var myPara5 = document.createElement('p');
+            var myPara6 = document.createElement('p');
+            var myPara7 = document.createElement('ul');
+            var myPara8 = document.createElement('p');
+            var myPara9 = document.createElement('ul');
             var myImg = document.createElement('img');
-            if(towns[i].name == "Preston"){
-                myImg.src="images/Preston-1024x683.jpg";
-                myImg.alt="Preston, Idaho";
-                
-                
+            if(temples[i].name == "Salt Lake Utah Temple"){
+                myImg.src="images/salt-lake-temple-759181-tablet.jpg";
+                myImg.alt="Salt Lake Utah Temple";                    
             }
-            if(towns[i].name == "Fish Haven"){
-                myImg.src="images/sodasprings-400x299.jpg";
-                myImg.alt="Fish Haven, Idaho";
+            if(temples[i].name == "Los Angeles California Temple"){
+                myImg.src="images/los-angeles-temple-759181-tablet.jpg";
+                myImg.alt="Los Angeles California Temple";
             }
-            if(towns[i].name == "Soda Springs"){
-                myImg.src="images/fishhaven-640x480-400x267.jpg";
-                myImg.alt="Soda Springs, Idaho";
+            if(temples[i].name == "Seattle Washington Temple"){
+                myImg.src="images/seattle-washington-temple-1079837-tablet.jpg";
+                myImg.alt="Seattle Washington Temple";
+            }
+            if(temples[i].name == "Atlanta Georgia Temple"){
+                myImg.src="images/atlanta-temple-lds-875956-tablet.jpg";
+                myImg.alt="Atlanta Georgia Temple";
             }
 
             myImg.classList.add("mainphotos");
     
-            myH3.textContent = towns[i].name;
-            myPara1.textContent = towns[i].motto;
-            myPara2.textContent = 'Year Founded: ' + towns[i].yearFounded;
-            myPara3.textContent = 'Population: ' + towns[i].currentPopulation;      
-            myPara4.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall + ' inches';  
+            myH3.textContent = temples[i].name;
+            myPara1.textContent = 'Address: ' + temples[i].address;
+            myPara2.textContent = 'Email: ' + temples[i].email;
+            myPara3.textContent = 'Phone Number: ' + temples[i].phone;      
+            myPara4.textContent = 'Ordinance Schedule: ' + temples[i].oschedule;  
+            myPara5.textContent = 'Session Schedule: ' + temples[i].sschedule;
+            myPara6.textContent = 'Ordinance Schedule: ' + temples[i].oschedule;
+            myPara7.textContent = 'Temple Closures:';
+            myPara8.textContent = 'Temple History: ' + temples[i].history;
+            myPara9.textContent = 'Services:';
 
-            myColumn.appendChild(myH3);
-            myColumn.appendChild(myPara1);
-            myColumn.appendChild(myPara2);
-            myColumn.appendChild(myPara3);
-            myColumn.appendChild(myPara4);
-            myColumn.appendChild(myImg);
-            column.appendChild(myColumn);
+            var templeClosures = temples[i].closes;
+
+            for(var j = 0; j < templeClosures.length; j++) {
+                var listCloses = document.createElement('li');
+                listCloses.textContent = templeClosures[j];
+                myPara7.appendChild(listCloses);
+            }            
+
+            var templeServices = temples[i].services;
+
+            for(var k = 0; k < templeServices.length; k++) {
+                var listServices = document.createElement('li');
+                listServices.textContent = templeServices[k];
+                myPara9.appendChild(listServices);
+            }
+
+            myGrid.appendChild(myH3);
+            myGrid.appendChild(myPara1);
+            myGrid.appendChild(myPara2);
+            myGrid.appendChild(myPara3);
+            myGrid.appendChild(myPara4);
+            myGrid.appendChild(myPara5);
+            myGrid.appendChild(myPara6);
+            myGrid.appendChild(myPara7);
+            myGrid.appendChild(myPara8);
+            myGrid.appendChild(myPara9);
+            myGrid.appendChild(myImg);
+
+            grid.appendChild(myGrid);
+        
+             }
+}
