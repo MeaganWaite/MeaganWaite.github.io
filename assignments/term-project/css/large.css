@@ -49,27 +49,10 @@
 
     .wrapper {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto;
         grid-gap: 10px;
         padding: 10px;
         align-content: space-between;
     }
-
-    /* #grid1 {
-        grid-column: 1;
-    }
-
-    #grid3 {
-        grid-column: 3;
-    }
-
-    #grid5 {
-        grid-column: 1;
-    }
-
-    #grid7 {
-        grid-column: 3;
-    } */
-
-   
+  

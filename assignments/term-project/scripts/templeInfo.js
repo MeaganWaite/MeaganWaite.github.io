@@ -1,6 +1,6 @@
 
 var grid = document.querySelector('div.wrapper');
-var requestURL = 'https://MeaganWaite.github.io/assignments/term-project/json/temples.json';
+var requestURL ="https://MeaganWaite.github.io/assignments/term-project/json/temples.json";
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
@@ -16,31 +16,31 @@ function showInfo(jsonObj) {
     for(var i = 0; i < temples.length; i++) {
        
             var myGrid = document.createElement('div');
+            myGrid.classList.add("grid");
             var myH3 = document.createElement('h3');
             var myPara1 = document.createElement('p');
             var myPara2 = document.createElement('p');
             var myPara3 = document.createElement('p');
             var myPara4 = document.createElement('p');
             var myPara5 = document.createElement('p');
-            var myPara6 = document.createElement('p');
             var myPara7 = document.createElement('ul');
             var myPara8 = document.createElement('p');
             var myPara9 = document.createElement('ul');
             var myImg = document.createElement('img');
             if(temples[i].name == "Salt Lake Utah Temple"){
-                myImg.src="images/salt-lake-temple-759181-tablet.jpg";
+                myImg.src="images/salt-lake-temple-759181-tablet-lg.jpg";
                 myImg.alt="Salt Lake Utah Temple";                    
             }
             if(temples[i].name == "Los Angeles California Temple"){
-                myImg.src="images/los-angeles-temple-759181-tablet.jpg";
+                myImg.src="images/los-angeles-temple-759181-tablet-lg.jpg";
                 myImg.alt="Los Angeles California Temple";
             }
             if(temples[i].name == "Seattle Washington Temple"){
-                myImg.src="images/seattle-washington-temple-1079837-tablet.jpg";
+                myImg.src="images/seattle-washington-temple-1079837-tablet-lg.jpg";
                 myImg.alt="Seattle Washington Temple";
             }
             if(temples[i].name == "Atlanta Georgia Temple"){
-                myImg.src="images/atlanta-temple-lds-875956-tablet.jpg";
+                myImg.src="images/atlanta-temple-lds-875956-tablet-lg.jpg";
                 myImg.alt="Atlanta Georgia Temple";
             }
 
@@ -51,11 +51,8 @@ function showInfo(jsonObj) {
             myPara2.textContent = 'Email: ' + temples[i].email;
             myPara3.textContent = 'Phone Number: ' + temples[i].phone;      
             myPara4.textContent = 'Ordinance Schedule: ' + temples[i].oschedule;  
-            myPara5.textContent = 'Session Schedule: ' + temples[i].sschedule;
-            myPara6.textContent = 'Ordinance Schedule: ' + temples[i].oschedule;
-            myPara7.textContent = 'Temple Closures:';
-            myPara8.textContent = 'Temple History: ' + temples[i].history;
-            myPara9.textContent = 'Services:';
+            myPara5.textContent = 'Session Schedule: ' + temples[i].sschedule;            
+            myPara8.textContent = 'Temple History: ' + temples[i].history;           
 
             var templeClosures = temples[i].closes;
 
@@ -79,7 +76,6 @@ function showInfo(jsonObj) {
             myGrid.appendChild(myPara3);
             myGrid.appendChild(myPara4);
             myGrid.appendChild(myPara5);
-            myGrid.appendChild(myPara6);
             myGrid.appendChild(myPara7);
             myGrid.appendChild(myPara8);
             myGrid.appendChild(myPara9);
