@@ -12,6 +12,8 @@ request.onload = function() {
 
 function showInfo(jsonObj) {
     var temples = jsonObj['temples'];
+
+    
     
     for(var i = 0; i < temples.length; i++) {
        
@@ -28,7 +30,7 @@ function showInfo(jsonObj) {
             var myPara9 = document.createElement('ul');
             var myImg = document.createElement('img');
             if(temples[i].name == "Salt Lake Utah Temple"){
-                myImg.src="images/salt-lake-temple-759181-tablet-lg.jpg";
+                myImg.src="images/salt-lake-temple-769668-tablet-lg.jpg";
                 myImg.alt="Salt Lake Utah Temple";                    
             }
             if(temples[i].name == "Los Angeles California Temple"){
@@ -51,8 +53,10 @@ function showInfo(jsonObj) {
             myPara2.textContent = 'Email: ' + temples[i].email;
             myPara3.textContent = 'Phone Number: ' + temples[i].phone;      
             myPara4.textContent = 'Ordinance Schedule: ' + temples[i].oschedule;  
-            myPara5.textContent = 'Session Schedule: ' + temples[i].sschedule;            
-            myPara8.textContent = 'Temple History: ' + temples[i].history;           
+            myPara5.textContent = 'Session Schedule: ' + temples[i].sschedule; 
+            myPara7.textContent = 'Temple Closures:'          
+            myPara8.textContent = 'Temple History: ' + temples[i].history;  
+            myPara9.textContent = 'Temple Amenities:'       
 
             var templeClosures = temples[i].closes;
 
@@ -80,7 +84,6 @@ function showInfo(jsonObj) {
             myGrid.appendChild(myPara8);
             myGrid.appendChild(myPara9);
             myGrid.appendChild(myImg);
-
             grid.appendChild(myGrid);
         
              }

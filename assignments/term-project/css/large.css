@@ -54,5 +54,9 @@
         grid-gap: 10px;
         padding: 10px;
         align-content: space-between;
+        border: 1px #5d4561;
     }
   
+    .mainphotos {
+        width: 85%;
+    }

@@ -1,7 +1,7 @@
 body {
     background-color: #e8efef;
     font-size: 12px;
-    line-height: 28px;
+    line-height: 32px;
     font-family: "PT sans";
     box-sizing: border-box;
 }
@@ -64,6 +64,11 @@ nav ul {
     grid-template-columns: 1fr;
 }
 
+.resBox {
+    margin: auto;
+    width: 80%
+    }
+
 fieldset {
     width: 98%
     padding: .5rem;
@@ -78,30 +83,46 @@ fieldset {
     margin: 5px;
 }
 
-.form-inline {
-    width: 98%;
+fieldset {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-}
-
-.form-inline label {
+    align-items: stretch;
     width: 98%;
-    margin: 5px 10px 5 px 0;
-}
-
-.form-inline {
-    width: 98%;
-    vertical-align: middle;
-    margin: 5px 10px 5px 0;
     padding: 10px;
     background-color: #e8efef;
     border: 1px solid #5d4561;
 }
-.formField {
+
+form fieldset {
+    margin: .2rem;
+    padding: .5rem;
+    color: #5d4561;
+    font-family: 'PT sans';
+}
+
+fieldset {
     width: 98%;
     padding: 12px 20px;
     margin: 8px 0; 
+}
+
+.formField {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form label.formField input {
+    display: block;
+    padding: .75rem;
+    color: #5d4561;
+    width: 100%;
+    max-width: 30rem;
+    background-color: #fff;
+    margin-top: -.25rem;
 }
 
 .theButton {
@@ -109,11 +130,18 @@ fieldset {
     background-color: #5d4561;
     border: 1px solid #5d4561;
     color: #e8efef;
+    margin-left: 5px;
+    width: 32rem;
   }
-#mainPgArticle {
-    width: 98%;
+
+  #homePageButton {
+      width: 99%;
+      margin-left: 5px;
+  }
+
+article {
+    width: 97.5%;
     margin: 5px;
-    margin-right: 5px;
     border: 1px solid #5d4561;
     padding: 10px; 
 }
@@ -129,8 +157,20 @@ fieldset {
     grid-gap: 10px;
     padding: 10px;
     align-content: space-between;
+    margin: 20px;
+    border: 1px #5d4561;
     
 }
+
+p {
+    width: 70%;
+    }
+
+#firstPage {
+    width: 98%;
+} 
+
+
 
 
 
