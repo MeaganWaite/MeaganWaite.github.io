@@ -24,14 +24,19 @@
 <span><img id="logo" src="images/Artboard 1.png"  alt="the temple logo"></span>
 
 <nav>
-    <ul id="menuID" class="largeNavMenu" style="list-style-type: none">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="temples.html">Temples</a></li>
-        <li><a class="here" href="reservations.html">Reservations</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contactUs.html">Contact Us</a></li>
-    </ul>
-</nav>
+        <ul id="menuID" class="largeNavMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="temples.html">Temples</a></li>
+            <li><a class="here" href="reservations.html">Reservations</a></li>
+            <li><a href="services.html">Services</a>
+                <ul>
+                    <li><a href="missionaries.html">Missionaries</a></li>
+                    <li><a href="reception.html">Reception</a></li>
+                </ul>
+            </li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+    </nav>
 
 <main>
     <div class="resBox">
@@ -66,13 +71,11 @@
                 <option value="Family Suite (Sleeps 8-10)"></option>   
                 </datalist>   
                 <label class="formField">Date: <input type="date" name="date"></label>
+                <br>
+                <textarea  rows="4" cols="68" name="information"> Enter any additional information here...</textarea> 
             </fieldset>
                 <input type="submit" value="Reserve My Stay" class="theButton">
-        </div>
-
-            
-            
-        </form>
+    </form>
   
     
 

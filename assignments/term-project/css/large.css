@@ -11,19 +11,6 @@
         justify-content: center;
     }
 
-    #menuID {
-        display: flex;
-    }
-    
-    nav ul {
-        overflow: hidden;
-    }
-
-    
-    ul {
-        display: inline-block;
-    }
-
     .homePhotos {
         margin: 5px;
         padding: 10px;
@@ -47,16 +34,25 @@
         align-items: center;
     } 
 
-    .wrapper {
+    .sec1, .sec2, .wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto;
         grid-gap: 10px;
         padding: 10px;
         align-content: space-between;
-        border: 1px #5d4561;
+        border: 1px solid #5d4561;
     }
   
     .mainphotos {
         width: 85%;
+    }
+
+    #tempBox, #mapGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-gap: 5px;
+        padding: 10px;
+        align-content: space-between;
     }

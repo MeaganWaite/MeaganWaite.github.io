@@ -1,6 +1,6 @@
 body {
     background-color: #e8efef;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 32px;
     font-family: "PT sans";
     box-sizing: border-box;
@@ -17,6 +17,13 @@ h1, h2 {
     text-align: center;
 }
 
+h3 {
+    font-family: "PT sans";
+    text-align: center;
+    color: #5d4561
+    font-size: 20px !important;
+} 
+
 #logo {
     width: 75px;
     height: auto;
@@ -25,7 +32,11 @@ h1, h2 {
 }
 
 header {
+    width: 100%;
+    flex: auto;
     text-align: center;
+    font-family: "Trajan";
+    color: #5d4561
 }
 
 .here {
@@ -33,14 +44,13 @@ header {
     color: #000;
 }
 
-nav {
+nav, ul li ul li {
     flex: auto;
     background-color: #5d4561;
     border: 1px solid #8cadae;
     text-align: center;
     color: #8c8c8c;
-    font-family: "Trajan";
-    
+    font-family: "Trajan";    
 }
 
 nav a {
@@ -52,11 +62,39 @@ nav a {
     border-style: solid 2px;
 }
 
-nav ul {
+nav ul, ul li {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+}
+
+.largeNavMenu {
+    display: block;
+    style: "list-style-type: none";
+}
+
+nav ul {
+    overflow: hidden;
+}
+
+
+ul {
+    display: inline-block;
+}
+
+ul li ul {
+    position: absolute;
+    display: none;
+    }
+
+ul li:hover ul {
+    display: block;
+}
+
+ul li ul li {
+    position: relative;
+    display: block;
 }
 
 .homePhotos {
@@ -68,14 +106,6 @@ nav ul {
     margin: auto;
     width: 80%
     }
-
-fieldset {
-    width: 98%
-    padding: .5rem;
-    border: 1px solid #5d4561;
-    border-radius: .2rem;
-    font-size: .85rem;
-}
 
 .form1 {
     display: inline-block
@@ -89,25 +119,21 @@ fieldset {
     flex-wrap: nowrap;
     justify-content: center;
     justify-content: space-around;
-    align-items: center;
     align-items: stretch;
     width: 98%;
-    padding: 10px;
+    margin: auto;
     background-color: #e8efef;
-    border: 1px solid #5d4561;
-}
+    border: 1px solid #5d4561;    
+    padding: .5rem;
+    border-radius: .2rem;
+    font-size: .85rem;
+    }
 
 form fieldset {
     margin: .2rem;
     padding: .5rem;
     color: #5d4561;
     font-family: 'PT sans';
-}
-
-fieldset {
-    width: 98%;
-    padding: 12px 20px;
-    margin: 8px 0; 
 }
 
 .formField {
@@ -119,11 +145,11 @@ form label.formField input {
     display: block;
     padding: .75rem;
     color: #5d4561;
-    width: 100%;
-    max-width: 30rem;
+    width: 90%;
+    max-width: 75%;
     background-color: #fff;
     margin-top: -.25rem;
-}
+   }
 
 .theButton {
     padding: 10px 20px;
@@ -131,15 +157,18 @@ form label.formField input {
     border: 1px solid #5d4561;
     color: #e8efef;
     margin-left: 5px;
-    width: 32rem;
+    width: 75%;
+    margin-bottom: 10px;
   }
 
   #homePageButton {
-      width: 99%;
-      margin-left: 5px;
+    width: 99%;
+    margin-left: 5px;
+    text-align: center;  
+    color: #e8efef; 
   }
 
-article {
+article, #tempBox {
     width: 97.5%;
     margin: 5px;
     border: 1px solid #5d4561;
@@ -153,30 +182,77 @@ article {
 .wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto;
     grid-gap: 10px;
     padding: 10px;
     align-content: space-between;
-    margin: 20px;
-    border: 1px #5d4561;
-    
+    width: 98%;
+    margin: auto;
 }
 
-p {
-    width: 70%;
-    }
-
-#firstPage {
-    width: 98%;
+#firstPage, #tempBox {
+    width: 90%;
 } 
 
+#tempBox, #mapGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 5px;
+    padding: 10px;
+    align-content: space-between;
+}
 
+#mapGrid {
+    margin-left: 10px;
+    margin-right: 20px;
+}
 
+.weatherMapOrg {
+  text-align: center;
+}
 
+.weatherMapOrg a {
+    color: #5d4561;
+    font-size: .6rem;
+  }
 
+#googleMap {
+    margin-top: 45px;
+    margin-left: 20px;
+}
 
+iframe {
+    margin-top: 30px;
+}
 
+/* .leftcol, .rightcol{
+    max-width: 48%;
+      flex: 1 0 15em;
+      padding: 10px;
+    } */
 
+.sec1, .sec2 {
+    display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        padding: 10px; 
+        margin: 5px;
+        border: 1px solid #5d4561; 
+    }
 
+    .img1, .img2 {
+        width: 90%;
+        align-content: center;
+        }
 
+    p {
+        width: 90%;
+    }
+
+    .mainphotos {
+        width: 85%;
+        align-items: center;
+    }
 
