@@ -53,25 +53,25 @@
     <form action="/action_page.php">
         <fieldset>
             <legend>Create My Reservation</legend>
+            <label class="formField">Location: <input list="templeLocation" name="templeLocation"></label>
+            <datalist id="templeLocation">
+            <option value="Atlanta, Georgia"></option>
+            <option value="Houston, Texas"></option>
+            <option value="Los Angeles, California"></option>
+            <option value="Mesa, Arizona"></option>
+            <option value="Oakland, California"></option>
+            <option value="Portland, Oregon"></option>
+            <option value="Provo, Utah"></option>
+            <option value="Salt Lake City, Utah"></option>
+            <option value="San Diego, California"></option>
+            <option value="Seattle, Washington"></option>
+            <option value="Washington, D.C."></option>
+            </datalist>
             <label class="formField">First Name:* <input type="text" name="fname" required pattern="[A-Za-z]{5,}"></label>
             <label class="formField">Last Name:* <input type="text" name="lname" required pattern="[A-Za-z]{5,}"></label>
             <label class="formField">Email Address: <input type="email" name="email" placeholder="sample@gmail.com"></label>
             <label class="formField">Phone Number:* <input type="tel" name="phone" required></label>
             <label class="formField">Home State or Country:* <input type="number" name="zipCode" required></label>  
-            <label class="formField">Location: <input list="templeLocation" name="templeLocation"></label>
-                <datalist id="templeLocation">
-                <option value="Atlanta, Georgia"></option>
-                <option value="Houston, Texas"></option>
-                <option value="Los Angeles, California"></option>
-                <option value="Mesa, Arizona"></option>
-                <option value="Oakland, California"></option>
-                <option value="Portland, Oregon"></option>
-                <option value="Provo, Utah"></option>
-                <option value="Salt Lake City, Utah"></option>
-                <option value="San Diego, California"></option>
-                <option value="Seattle, Washington"></option>
-                <option value="Washington, D.C."></option>
-                </datalist>
                 <label class="formField">Number of Rooms: <input type="number" min="0" name="numberRooms" required></label>
             <label class="formField">Room Type: <input list="roomType" name="roomType"></label>
                 <datalist id="roomType">

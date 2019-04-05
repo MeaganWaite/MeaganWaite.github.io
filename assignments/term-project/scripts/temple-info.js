@@ -30,19 +30,19 @@ function showInfo(jsonObj) {
             var myPara9 = document.createElement('ul');
             var myImg = document.createElement('img');
             if(temples[i].name == "Salt Lake Utah Temple"){
-                myImg.src="images/salt-lake-temple-769668-tablet-lg.jpg";
+                myImg.src="images/salt-lake-temple-769668-tablet-med.jpg";
                 myImg.alt="Salt Lake Utah Temple";                    
             }
             if(temples[i].name == "Los Angeles California Temple"){
-                myImg.src="images/los-angeles-temple-759181-tablet-lg.jpg";
+                myImg.src="images/los-angeles-temple-759181-tablet-med.jpg";
                 myImg.alt="Los Angeles California Temple";
             }
             if(temples[i].name == "Seattle Washington Temple"){
-                myImg.src="images/seattle-washington-temple-1079837-tablet-lg.jpg";
+                myImg.src="images/seattle-washington-temple-1079837-tablet-med.jpg";
                 myImg.alt="Seattle Washington Temple";
             }
             if(temples[i].name == "Atlanta Georgia Temple"){
-                myImg.src="images/atlanta-temple-lds-875956-tablet-lg.jpg";
+                myImg.src="images/atlanta-temple-lds-875956-tablet-med.jpg";
                 myImg.alt="Atlanta Georgia Temple";
             }
 
