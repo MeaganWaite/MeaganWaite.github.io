@@ -43,6 +43,12 @@
         align-content: space-between;
         border: 1px solid #5d4561;
     }
+
+    .wrapper p {
+        width: 90%;
+        margin-left: 3%;
+        margin-right: 20%;
+    }
   
     .mainphotos {
         width: 85%;
@@ -55,4 +61,10 @@
         grid-gap: 5px;
         padding: 10px;
         align-content: space-between;
+        width: 98%
     }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+  }

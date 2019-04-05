@@ -14,14 +14,22 @@
 
 <body>
 
+    <hr>
 
 <header>
-        <hr>
-        <h1>Temple Inn & Suites</h1>
-        <h2>of Bethesda, Maryland</h2>
-</header>
-
-<span><img id="logo" src="images/Artboard 1.png"  alt="the temple logo"></span>
+        <div>
+            <span><img id="logo" src="images/Artboard 1.png"  alt="the temple logo"></span>
+        </div>
+    
+        <div>           
+            <h1>Temple Inn & Suites</h1>
+            <h2>of Bethesda, Maryland</h2>
+        </div>
+    
+        <div>
+            <p>410-555-1212<br>contactus@TempleInnSuites.com</p>
+        </div>
+    </header>
 
 <nav>
         <ul class="largeNavMenu">
@@ -34,18 +42,19 @@
                     <li><a href="reception.html">Reception</a></li>
                 </ul>
             </li>
-            <li><a href="contactUs.html">Contact Us</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
         </ul>
     </nav>
 
 <main>
     <h2>Temple Spotlights</h2>
-    <h3>Every month, we choose four temples to feature on our site. This month, all of our temples are from the United States. </h3>
+    <h3>Every month, we choose four temples to feature on our site. This month, all of our temples are from the United States.</h3>
+    <h4>To learn more about temples of The Church of Jesus Christ of Latter-day Saints, visit <a href="https://www.lds.org/temples">lds.org</a>. </h4>
     
 
     <div class="wrapper"></div>  
     
-    <div>
+    <div id="tempHeader">
         <h2>Current Temperatures</h2>
         <p class="weatherMapOrg"><a href="https://openweathermap.org/" target="blank">Up-to-date weather courtesy of weathermap.org</a></p>
     </div>
@@ -61,11 +70,22 @@
 
     <hr>
 
-    <footer>
-
+<footer>
+        <div>
+            <!-- <p>Follow us on social media:  -->
+            <img src="images/facebook-logo.png" alt="Facebook logo">
+            <img src="images/youtube logo.png" alt="YouTube logo">
+            <img src="images/instagram-logo.png" alt="Instagram logo"> 
+        </p>           
+        </div>
+        <p id="info">&copy; 2019 || Meagan Waite CIT230</p>
+        <div>
+            <p id="currentDate"></p>
+        </div>
     </footer>
-
-        <script src="scripts/templeInfo.js"></script>
-        <script src="scripts/currentWeatherSLC.js"></script>
+    
+       <script src="scripts/current-date.js"></script>
+        <script src="scripts/temple-info.js"></script>
+        <script src="scripts/current-weather.js"></script>
 </body>
 </html>

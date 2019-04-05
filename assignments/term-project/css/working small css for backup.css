@@ -17,28 +17,23 @@ h1, h2 {
     text-align: center;
 }
 
-h3{
+h3 {
     font-family: "PT sans";
     text-align: center;
-    color: #5d4561;
+    color: #5d4561
     font-size: 20px !important;
 } 
 
-h4 {
-    font-family: "PT sans";
-    text-align: center;
-    color: #5d4561;
+#logo {
+    width: 75px;
+    height: auto;
+    margin-top: -200px;
+    margin-left: 10px;
 }
 
-#logo {
-    width: 100px;
-    height: auto;
-   }
-
 header {
-    display: grid;
-    grid-template-columns: 1fr;
     width: 100%;
+    flex: auto;
     text-align: center;
     font-family: "Trajan";
     color: #5d4561
@@ -55,7 +50,7 @@ nav, ul li ul li {
     border: 1px solid #8cadae;
     text-align: center;
     color: #8c8c8c;
-    font-family: "PT sans";    
+    font-family: "Trajan";    
 }
 
 nav a {
@@ -67,11 +62,8 @@ nav a {
     border-style: solid 2px;
 }
 
-nav a:hover {
-    background-color: #8cadae;
-}
-
 nav ul, ul li {
+    list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -79,7 +71,7 @@ nav ul, ul li {
 
 .largeNavMenu {
     display: block;
-    font-family: "PT sans";
+    style: "list-style-type: none";
 }
 
 nav ul {
@@ -112,7 +104,8 @@ ul li ul li {
 
 .resBox {
     margin: auto;
-   }
+    width: 80%
+    }
 
 .form1 {
     display: inline-block
@@ -160,20 +153,20 @@ form label.formField input {
 
 .theButton {
     padding: 10px 20px;
-    background-color: #8cadae;
+    background-color: #5d4561;
     border: 1px solid #5d4561;
-    color: #5d4561;
+    color: #e8efef;
     margin-left: 5px;
     width: 75%;
     margin-bottom: 10px;
   }
 
-#homePageButton {
-width: 99%;
-margin-left: 5px;
-text-align: center;  
-color: #5d4561; 
-}
+  #homePageButton {
+    width: 99%;
+    margin-left: 5px;
+    text-align: center;  
+    color: #e8efef; 
+  }
 
 article, #tempBox {
     width: 97.5%;
@@ -193,7 +186,7 @@ article, #tempBox {
     grid-gap: 10px;
     padding: 10px;
     align-content: space-between;
-    width: 96%;
+    width: 98%;
     margin: auto;
 }
 
@@ -201,10 +194,6 @@ article, #tempBox {
     width: 85%;
     margin-left: 5px;
     margin-right: 15px;
-}
-
-.wrapper ul {
-    list-style: inside circle;
 }
 
 #tempHeader {
@@ -265,7 +254,7 @@ iframe {
     padding: 10px; 
     margin: 5px;
     border: 1px solid #5d4561; 
-    }S
+    }
 
     .img1, .img2 {
         width: 90%;
@@ -273,9 +262,8 @@ iframe {
         }
 
     p {
-        font-family: "PT sans";
         width: 90%;
-        margin-left: 2%;S
+        margin-left: 2%;
         margin-right: 2%;
     }
 
@@ -284,13 +272,4 @@ iframe {
         align-items: center;
     }
 
-   footer {
-       display: grid;
-       grid-template-columns: 1fr 1fr 1fr;
-       background-color: #5d4561;
-       color: #e8efef;
-       text-align: center;
-   }
-   .bulletOne {
-       list-style: inside circle;
-   }
+   
