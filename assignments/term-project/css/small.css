@@ -1,6 +1,6 @@
 body {
     background-color: #e8efef;
-    font-size: 14px;
+    font-size: 1rem;
     line-height: 32px;
     font-family: "PT sans";
     box-sizing: border-box;
@@ -8,7 +8,7 @@ body {
 
 hr {
     width: 100%;
-    height: 15px;
+    height: 1rem;
     background-color: #8cadae;
 }
 
@@ -21,7 +21,7 @@ h3{
     font-family: "PT sans";
     text-align: center;
     color: #5d4561;
-    font-size: 20px !important;
+    font-size: 1.25px !important;
 } 
 
 h4 {
@@ -183,7 +183,7 @@ article, #tempBox {
 }
 
 .readMore {
-    font-size: 9px;
+    font-size: .8rem;
 }
 
 .wrapper {
